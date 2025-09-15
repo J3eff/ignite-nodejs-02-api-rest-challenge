@@ -1,0 +1,21 @@
+{
+  "name": "ignite-nodejs-02-api-rest-challenge",
+  "version": "1.0.0",
+  "description": "<aside> ⚠️ A partir desse desafio **não** vamos informar detalhadamente rotas e propriedades dos registros a serem criadas, mas sim, as regras e requisitos que a API deve ter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J3eff/ignite-nodejs-02-api-rest-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/J3eff/ignite-nodejs-02-api-rest-challenge/issues"
+  },
+  "homepage": "https://github.com/J3eff/ignite-nodejs-02-api-rest-challenge#readme"
+}
