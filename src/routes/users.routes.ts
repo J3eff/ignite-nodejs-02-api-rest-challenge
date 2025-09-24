@@ -4,7 +4,7 @@ import { randomUUID } from "node:crypto";
 import { knex } from "../database";
 
 export async function usersRoutes(app: FastifyInstance) {
-  app.post("/users", async (request, reply) => {
+  app.post("/", async (request, reply) => {
     const bodySchema = z.object({
       name: z.string(),
       email: z.string().email(),
@@ -15,7 +15,7 @@ export async function usersRoutes(app: FastifyInstance) {
     if (!sessionId) {
       sessionId = randomUUID();
 
-      reply.cookie("sessionId", sessionId, {
+      reply.setCookie("sessionId", sessionId, {
         path: "/",
         maxAge: 1000 * 60 * 60 * 24 * 7, // 7 days
       });
